@@ -3,9 +3,9 @@
 	public class ATM
 	{
 		private SortedList<int, int?> nominals;
-		public ATM(SortedList<int, int?> bills)
+		public ATM(SortedList<int, int?> nominals)
 		{
-			nominals = bills;
+			this.nominals = nominals;
 		}
 
 		public void WithdrawMoney(decimal amount)
