@@ -2,9 +2,9 @@
 {
 	public static class FileReader
 	{
-		public static SortedList<int, int?> ReadValuesFromFile(string fileName)
+		public static SortedDictionary<int, int> ReadValuesFromFile(string fileName)
 		{
-			SortedList<int, int?> result = new();
+			SortedDictionary<int, int> result = new();
 			using StreamReader sr = new(fileName);
 			while (!sr.EndOfStream)
 			{
